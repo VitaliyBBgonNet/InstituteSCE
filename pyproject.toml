@@ -6,7 +6,8 @@ authors = ["VitaliyHome <vitaliy.go2001@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
+pyside6 = "^6.7.2"
 
 
 [build-system]
