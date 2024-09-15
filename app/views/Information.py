@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'Information.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
@@ -15,7 +24,7 @@ class Information(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(575, 789)
+        MainWindow.resize(575, 790)
         MainWindow.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(81, 0, 135, 255), stop:0.427447 rgba(41, 61, 132, 235), stop:1 rgba(155, 79, 165, 255));\n"
 "")
         self.centralwidget = QWidget(MainWindow)
@@ -23,7 +32,7 @@ class Information(object):
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(200, 20, 221, 51))
-        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
@@ -205,7 +214,7 @@ class Information(object):
 "font: 14pt \"LXGW WenKai TC\";")
         self.PB_Add_ELEMENT_2 = QPushButton(self.centralwidget)
         self.PB_Add_ELEMENT_2.setObjectName(u"PB_Add_ELEMENT_2")
-        self.PB_Add_ELEMENT_2.setGeometry(QRect(190, 640, 241, 61))
+        self.PB_Add_ELEMENT_2.setGeometry(QRect(40, 640, 321, 61))
         self.PB_Add_ELEMENT_2.setFont(font1)
         self.PB_Add_ELEMENT_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
 "border: 1px solid rgba(255,255,255,40);\n"
@@ -253,6 +262,16 @@ class Information(object):
         self.verticalLayout_21.setSpacing(6)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.verticalLayout_21.setContentsMargins(12, 12, 12, 12)
+        self.PB_DeleteElement = QPushButton(self.centralwidget)
+        self.PB_DeleteElement.setObjectName(u"PB_DeleteElement")
+        self.PB_DeleteElement.setGeometry(QRect(370, 640, 171, 61))
+        self.PB_DeleteElement.setFont(font1)
+        self.PB_DeleteElement.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
+"border: 1px solid rgba(255,255,255,40);\n"
+"border-radius: 7px;\n"
+"color: white;\n"
+"font-weight: bold;\n"
+"font: 14pt \"LXGW WenKai TC\";")
         MainWindow.setCentralWidget(self.centralwidget)
         self.new_transaction.raise_()
         self.label.raise_()
@@ -277,6 +296,7 @@ class Information(object):
         self.pushButton.raise_()
         self.Box_object_fio.raise_()
         self.pushButton_2.raise_()
+        self.PB_DeleteElement.raise_()
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
         self.menubar.setGeometry(QRect(0, 0, 575, 21))
@@ -305,5 +325,6 @@ class Information(object):
         self.PB_Add_ELEMENT_2.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044c \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f ", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0438\u0441\u043a", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043a\u0430\u043d\u0435\u0440", None))
+        self.PB_DeleteElement.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c", None))
     # retranslateUi
 
