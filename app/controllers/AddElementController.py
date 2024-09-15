@@ -1,12 +1,9 @@
-import sys
-import datetime
-
 from PySide6.QtWidgets import QApplication, QMainWindow
 
-from app.views.EddElementInterface import EddElementWindow
+from app.views.AddElementInterface import AddElementWindow
 
-class AddElementService(QMainWindow):
+class AddElementController(QMainWindow):
     def __init__(self, parent=None):
-        super(AddElementService, self).__init__(parent)
-        self.ui = EddElementWindow()
+        super(AddElementController, self).__init__(parent)
+        self.ui = AddElementWindow()
         self.ui.setupUi(self)

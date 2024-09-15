@@ -20,7 +20,7 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QDateTimeEdit, QFrame,
     QSizePolicy, QStatusBar, QTextEdit, QVBoxLayout,
     QWidget)
 
-class EddElementWindow(object):
+class AddElementWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
