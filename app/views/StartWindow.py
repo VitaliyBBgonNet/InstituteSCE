@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'ui_maininterface_1.ui'
-##
-## Created by: Qt User Interface Compiler version 6.6.0
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -19,7 +9,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QMainWindow,
     QMenuBar, QPushButton, QSizePolicy, QStatusBar,
     QVBoxLayout, QWidget)
 
-class Ui_MainWindow(object):
+class StartWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
@@ -118,10 +108,4 @@ class Ui_MainWindow(object):
         self.PB_Arenda.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f", None))
         self.PB_QR.setText(QCoreApplication.translate("MainWindow", u"QR", None))
     # retranslateUi
-
-if __name__ == '__main__':
-    app = QApplication()
-    window = Interface()
-    window.show()
-    sys.exit(app.exec())
 

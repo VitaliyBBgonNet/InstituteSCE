@@ -11,7 +11,7 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QDateEdit, QFrame,
     QSizePolicy, QStatusBar, QTextEdit, QVBoxLayout,
     QWidget)
 
-class Ui_MainWindow(object):
+class Information(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")

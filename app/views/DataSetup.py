@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'Data_Setup.ui'
-##
-## Created by: Qt User Interface Compiler version 6.6.0
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -19,7 +9,7 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QLabel,
     QMainWindow, QMenuBar, QPushButton, QSizePolicy,
     QStatusBar, QTextEdit, QVBoxLayout, QWidget)
 
-class DataSetupWindow(object):
+class DataSetup(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
