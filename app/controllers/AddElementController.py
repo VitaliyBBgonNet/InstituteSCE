@@ -15,6 +15,7 @@ class AddElementController(QMainWindow):
         super(AddElementController, self).__init__(parent)
         self.addAddElementInterface = AddElement()
         self.addAddElementInterface.setupUi(self)
+        self.addAddElementInterface.dateTimeEdit.setDate(datetime.now())
         self.checkDatabase()
         self.addAddElementInterface.PB_Add_ELEMENT_2.clicked.connect(self.print_test)
 
