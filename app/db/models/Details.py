@@ -4,29 +4,28 @@ from sqlalchemy.orm import relationship
 import uuid
 from app.db import Base
 
-
 class Detail(Base):
     __tablename__ = 'details'
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, unique=True, nullable=False)
     name = Column(String, nullable=False)  # Наименование
 
-    type_id = Column(Integer, ForeignKey('types.id'), nullable=False)  # Тип
+    type_id = Column(Integer, ForeignKey('types.id'), nullable=True)  # Тип
     type = relationship("Type")
 
-    status_id = Column(Integer, ForeignKey('statuses.id'), nullable=False)  # Состояние
+    status_id = Column(Integer, ForeignKey('statuses.id'), nullable=True)  # Состояние
     status = relationship("Status")
 
-    project_id = Column(Integer, ForeignKey('projects.id'), nullable=False)  # Проект
+    project_id = Column(Integer, ForeignKey('projects.id'), nullable=True)  # Проект
     project = relationship("Project")
 
-    department_id = Column(Integer, ForeignKey('departments.id'), nullable=False)  # Подразделение
+    department_id = Column(Integer, ForeignKey('departments.id'), nullable=True)  # Подразделение
     department = relationship("Department")
 
-    user_id = Column(Integer, ForeignKey('users.id'), nullable=False)  # Пользователи
+    user_id = Column(Integer, ForeignKey('users.id'), nullable=True)  # Пользователи
     user = relationship("User")
 
-    data = Column(DateTime, nullable=False)  # Дата
+    data = Column(DateTime, nullable=True)  # Дата
     note = Column(String, nullable=True)  # Примечание
 
     def __repr__(self):
