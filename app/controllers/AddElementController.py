@@ -5,7 +5,6 @@ from app.db.models.Type import Type
 from app.db.models.Status import Status
 from app.db.models.Project import Project
 from app.db.models.Department import Department
-from app.db.models.User import User
 from app.db import SessionLocal
 from datetime import datetime
 
@@ -56,7 +55,7 @@ class AddElementController(QMainWindow):
                 type = Type(name = self.addAddElementInterface.Box_Type.currentText()),
                 status = Status(name = self.addAddElementInterface.Box_Status.currentText()),
                 project = Project(name = self.addAddElementInterface.Box_Project_Name.currentText()),
-                department = Department(name = self.addAddElementInterface.Box_Project_Name.currentText()),
+                department = Department(name = self.addAddElementInterface.Box_Name_Subdivade.currentText()),
                 users = self.addAddElementInterface.Text_FIO_2.toPlainText(),
                 data = self.addAddElementInterface.dateTimeEdit.text(),
                 note = self.addAddElementInterface.Text_Note_2.toPlainText()
