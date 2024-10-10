@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'Data_Setup.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.3
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -13,7 +23,7 @@ class DataSetup(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(763, 722)
+        MainWindow.resize(758, 417)
         MainWindow.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(81, 0, 135, 255), stop:0.427447 rgba(41, 61, 132, 235), stop:1 rgba(155, 79, 165, 255));\n"
 "")
         self.centralwidget = QWidget(MainWindow)
@@ -216,12 +226,6 @@ class DataSetup(object):
 "color: white;\n"
 "\n"
 "font: 14pt \"LXGW WenKai TC\";")
-        self.line = QFrame(self.centralwidget)
-        self.line.setObjectName(u"line")
-        self.line.setGeometry(QRect(20, 350, 731, 20))
-        self.line.setStyleSheet(u"background-color:none;")
-        self.line.setFrameShape(QFrame.HLine)
-        self.line.setFrameShadow(QFrame.Sunken)
         self.label_5 = QLabel(self.centralwidget)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setGeometry(QRect(210, 10, 351, 31))
@@ -236,141 +240,9 @@ class DataSetup(object):
 "background-color: none;\n"
 "border: none;\n"
 "font: 25pt \"LXGW WenKai TC\";")
-        self.label_6 = QLabel(self.centralwidget)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(30, 370, 171, 31))
-        self.label_6.setFont(font)
-        self.label_6.setStyleSheet(u"color: white;\n"
-"font-weight: bold;\n"
-"background-color: none;\n"
-"border: none;\n"
-"font: 18pt \"LXGW WenKai TC\";")
-        self.Text_Type_2 = QTextEdit(self.centralwidget)
-        self.Text_Type_2.setObjectName(u"Text_Type_2")
-        self.Text_Type_2.setGeometry(QRect(130, 420, 401, 41))
-        self.Text_Type_2.setFont(font1)
-        self.Text_Type_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font: 14pt \"LXGW WenKai TC\";")
-        self.PB_Connected = QPushButton(self.centralwidget)
-        self.PB_Connected.setObjectName(u"PB_Connected")
-        self.PB_Connected.setGeometry(QRect(650, 420, 91, 41))
-        self.PB_Connected.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font-weight: bold;\n"
-"font: 10pt \"LXGW WenKai TC\";")
-        self.PB_Search_DataBace = QPushButton(self.centralwidget)
-        self.PB_Search_DataBace.setObjectName(u"PB_Search_DataBace")
-        self.PB_Search_DataBace.setGeometry(QRect(550, 420, 91, 41))
-        self.PB_Search_DataBace.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font-weight: bold;\n"
-"font: 10pt \"LXGW WenKai TC\";")
-        self.label_7 = QLabel(self.centralwidget)
-        self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(40, 420, 101, 32))
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet(u"color: white;\n"
-"font-weight: bold;\n"
-"background-color: none;\n"
-"border: none;\n"
-"font: 18pt \"LXGW WenKai TC\";")
-        self.label_8 = QLabel(self.centralwidget)
-        self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(40, 580, 101, 32))
-        self.label_8.setFont(font)
-        self.label_8.setStyleSheet(u"color: white;\n"
-"font-weight: bold;\n"
-"background-color: none;\n"
-"border: none;\n"
-"font: 18pt \"LXGW WenKai TC\";")
-        self.Text_Type_3 = QTextEdit(self.centralwidget)
-        self.Text_Type_3.setObjectName(u"Text_Type_3")
-        self.Text_Type_3.setGeometry(QRect(130, 580, 401, 41))
-        self.Text_Type_3.setFont(font1)
-        self.Text_Type_3.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font: 14pt \"LXGW WenKai TC\";")
-        self.PB_CreateDataBace = QPushButton(self.centralwidget)
-        self.PB_CreateDataBace.setObjectName(u"PB_CreateDataBace")
-        self.PB_CreateDataBace.setGeometry(QRect(300, 630, 231, 41))
-        self.PB_CreateDataBace.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font-weight: bold;\n"
-"font: 10pt \"LXGW WenKai TC\";")
-        self.PB_Search_DataBace_2 = QPushButton(self.centralwidget)
-        self.PB_Search_DataBace_2.setObjectName(u"PB_Search_DataBace_2")
-        self.PB_Search_DataBace_2.setGeometry(QRect(550, 580, 91, 41))
-        self.PB_Search_DataBace_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font-weight: bold;\n"
-"font: 10pt \"LXGW WenKai TC\";")
-        self.label_9 = QLabel(self.centralwidget)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setGeometry(QRect(40, 630, 71, 32))
-        self.label_9.setFont(font)
-        self.label_9.setStyleSheet(u"color: white;\n"
-"font-weight: bold;\n"
-"background-color: none;\n"
-"border: none;\n"
-"font: 18pt \"LXGW WenKai TC\";")
-        self.Text_Type_4 = QTextEdit(self.centralwidget)
-        self.Text_Type_4.setObjectName(u"Text_Type_4")
-        self.Text_Type_4.setGeometry(QRect(130, 630, 161, 41))
-        self.Text_Type_4.setFont(font1)
-        self.Text_Type_4.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font: 14pt \"LXGW WenKai TC\";")
-        self.label_10 = QLabel(self.centralwidget)
-        self.label_10.setObjectName(u"label_10")
-        self.label_10.setGeometry(QRect(30, 530, 171, 31))
-        self.label_10.setFont(font)
-        self.label_10.setStyleSheet(u"color: white;\n"
-"font-weight: bold;\n"
-"background-color: none;\n"
-"border: none;\n"
-"font: 18pt \"LXGW WenKai TC\";")
-        self.line_2 = QFrame(self.centralwidget)
-        self.line_2.setObjectName(u"line_2")
-        self.line_2.setGeometry(QRect(20, 510, 731, 20))
-        self.line_2.setStyleSheet(u"background-color:none;")
-        self.line_2.setFrameShape(QFrame.HLine)
-        self.line_2.setFrameShadow(QFrame.Sunken)
-        self.Text_Type_5 = QTextEdit(self.centralwidget)
-        self.Text_Type_5.setObjectName(u"Text_Type_5")
-        self.Text_Type_5.setGeometry(QRect(130, 470, 401, 41))
-        self.Text_Type_5.setFont(font1)
-        self.Text_Type_5.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font: 14pt \"LXGW WenKai TC\";")
-        self.label_11 = QLabel(self.centralwidget)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setGeometry(QRect(40, 470, 101, 32))
-        self.label_11.setFont(font)
-        self.label_11.setStyleSheet(u"color: white;\n"
-"font-weight: bold;\n"
-"background-color: none;\n"
-"border: none;\n"
-"font: 18pt \"LXGW WenKai TC\";")
         self.new_transaction = QFrame(self.centralwidget)
         self.new_transaction.setObjectName(u"new_transaction")
-        self.new_transaction.setGeometry(QRect(20, 10, 731, 671))
+        self.new_transaction.setGeometry(QRect(20, 10, 731, 361))
         self.new_transaction.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
 "border: 1px solid rgba(255,255,255,40);\n"
 "border-radius: 7px;")
@@ -402,26 +274,10 @@ class DataSetup(object):
         self.Box_State.raise_()
         self.Box_Project.raise_()
         self.Box_Subdive.raise_()
-        self.line.raise_()
         self.label_5.raise_()
-        self.label_6.raise_()
-        self.Text_Type_2.raise_()
-        self.PB_Connected.raise_()
-        self.PB_Search_DataBace.raise_()
-        self.label_7.raise_()
-        self.label_8.raise_()
-        self.Text_Type_3.raise_()
-        self.PB_CreateDataBace.raise_()
-        self.PB_Search_DataBace_2.raise_()
-        self.label_9.raise_()
-        self.Text_Type_4.raise_()
-        self.label_10.raise_()
-        self.line_2.raise_()
-        self.Text_Type_5.raise_()
-        self.label_11.raise_()
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 763, 21))
+        self.menubar.setGeometry(QRect(0, 0, 758, 21))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -447,15 +303,5 @@ class DataSetup(object):
         self.PB_Add_Sabdvide.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c", None))
         self.PB_Dell_Sabdvide.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0431\u0430\u0437\u044b \u0434\u0430\u043d\u043d\u044b\u0445", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435", None))
-        self.PB_Connected.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u0440\u0430\u0442\u044c", None))
-        self.PB_Search_DataBace.setText(QCoreApplication.translate("MainWindow", u"...", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0443\u0442\u044c:", None))
-        self.label_8.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0443\u0442\u044c:", None))
-        self.PB_CreateDataBace.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0437\u0434\u0430\u0442\u044c", None))
-        self.PB_Search_DataBace_2.setText(QCoreApplication.translate("MainWindow", u"...", None))
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043c\u044f:", None))
-        self.label_10.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435", None))
-        self.label_11.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None))
     # retranslateUi
 
