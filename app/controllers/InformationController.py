@@ -1,18 +1,15 @@
-import sys
-from PySide6.QtWidgets import QApplication, QMainWindow, QWidget,QTableWidget, QMessageBox, QMessageBox
-from sqlalchemy.orm.sync import clear
-
-from app.views.Information import Information
-from PySide6 import QtCore, QtGui, QtWidgets
-from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QFileDialog
-from app.db import SessionLocal, Detail
-from app.db.models.Type import Type
-from app.db.models.Status import Status
-from app.db.models.Project import Project
-from app.db.models.Department import Department
 import uuid
+
+from PySide6.QtWidgets import QMainWindow
 from sqlalchemy.orm import joinedload
+
+from app.db import SessionLocal, Detail
+from app.db.models.Department import Department
+from app.db.models.Project import Project
+from app.db.models.Status import Status
+from app.db.models.Type import Type
+from app.views.Information import Information
+
 
 # 8379e672-aa8b-4629-9682-e0c9653f341e
 class InformationWindowController(QMainWindow):
@@ -47,7 +44,6 @@ class InformationWindowController(QMainWindow):
         return searchDetail
 
     def serchDetail(self):
-        db_session = SessionLocal()
         searchDetail = self.entitySearch()
 
         self.UiInformationInterface.text_name_object.setText(searchDetail.name)
