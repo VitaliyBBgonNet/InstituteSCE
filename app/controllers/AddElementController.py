@@ -16,6 +16,7 @@ class AddElementController(QMainWindow):
         self.addAddElementInterface = AddElement()
         self.addAddElementInterface.setupUi(self)
         self.addAddElementInterface.dateTimeEdit.setDate(datetime.now())
+        self.clearAllBeforeLoadUI()
         self.checkDatabase()
         self.addAddElementInterface.PB_Add_ELEMENT_2.clicked.connect(self.print_test)
 
@@ -34,31 +35,31 @@ class AddElementController(QMainWindow):
             self.addAddElementInterface.Box_Status.addItem(temp.name)
 
         for temp in projects:
-            self.addAddElementInterface.Box_Status.addItem(temp.name)
+            self.addAddElementInterface.Box_Project_Name.addItem(temp.name)
 
         for temp in departments:
             self.addAddElementInterface.Box_Name_Subdivade.addItem(temp.name)
 
+    def clearAllBeforeLoadUI(self):
+        self.addAddElementInterface.Box_Type.clear()
+        self.addAddElementInterface.Box_Status.clear()
+        self.addAddElementInterface.Box_Project_Name.clear()
+        self.addAddElementInterface.Box_Name_Subdivade.clear()
+
     def print_test(self):
         db_session = SessionLocal()
-        type_obj = Type(name="Test Type")
-        status_obj = Status(name="Test Status")
-        project_obj = Project(name="Test Project")
-        department_obj = Department(name="Test Department")
-        user_obj = User(full_name="Test User")
 
-        for i in range(int(self.addAddElementInterface.Text_Count.toPlainText())):
-            print(i)
+        for temp in range(int(self.addAddElementInterface.Text_Count.toPlainText())):
 
             new_detail = Detail(
-                name=self.addAddElementInterface.Text_Name.toPlainText(),
-                type=type_obj,  # Присваиваем объект типа
-                status=status_obj,  # Присваиваем объект состояния
-                project=project_obj,  # Присваиваем объект проекта
-                department=department_obj,  # Присваиваем объект подразделения
-                user=user_obj,  # Присваиваем объект пользователя
-                data=datetime.now(),  # Текущая дата
-                note="This is a test note"  # Примечание
+                name = self.addAddElementInterface.Text_Name.toPlainText(),
+                type = Type(name = self.addAddElementInterface.Box_Type.currentText()),
+                status = Status(name = self.addAddElementInterface.Box_Status.currentText()),
+                project = Project(name = self.addAddElementInterface.Box_Project_Name.currentText()),
+                department = Department(name = self.addAddElementInterface.Box_Project_Name.currentText()),
+                users = self.addAddElementInterface.Text_FIO_2.toPlainText(),
+                data = self.addAddElementInterface.dateTimeEdit.text(),
+                note = self.addAddElementInterface.Text_Note_2.toPlainText()
             )
 
             db_session.add(new_detail)

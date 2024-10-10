@@ -22,11 +22,10 @@ class Detail(Base):
     department_id = Column(Integer, ForeignKey('departments.id'), nullable=True)  # Подразделение
     department = relationship("Department")
 
-    user_id = Column(Integer, ForeignKey('users.id'), nullable=True)  # Пользователи
-    user = relationship("User")
+    users = Column(String,nullable=True)
 
-    data = Column(DateTime, nullable=True)  # Дата
-    note = Column(String, nullable=True)  # Примечание
+    data = Column(DateTime, nullable=True)
+    note = Column(String, nullable=True)
 
     def __repr__(self):
         return f"<Detail(id={self.id}, name={self.name}, type_id={self.type_id}, status_id={self.status_id})>"
