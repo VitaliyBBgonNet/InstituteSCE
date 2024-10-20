@@ -10,20 +10,19 @@ class Detail(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, unique=True, nullable=False)
     name = Column(String, nullable=False)  # Наименование
 
-    type_id = Column(Integer, ForeignKey('types.id'), nullable=True)  # Тип
-    type = relationship("Type")
+    type_id = Column(Integer, ForeignKey('types.id', ondelete='SET NULL'), nullable=True)  # Тип
+    type = relationship("Type", back_populates="details")
 
-    status_id = Column(Integer, ForeignKey('statuses.id'), nullable=True)  # Состояние
-    status = relationship("Status")
+    status_id = Column(Integer, ForeignKey('statuses.id', ondelete='SET NULL'), nullable=True)  # Состояние
+    status = relationship("Status", back_populates="status")
 
-    project_id = Column(Integer, ForeignKey('projects.id'), nullable=True)  # Проект
-    project = relationship("Project")
+    project_id = Column(Integer, ForeignKey('projects.id', ondelete='SET NULL'), nullable=True)  # Проект
+    project = relationship("Project", back_populates="project")
 
-    department_id = Column(Integer, ForeignKey('departments.id'), nullable=True)  # Подразделение
-    department = relationship("Department")
+    department_id = Column(Integer, ForeignKey('departments.id', ondelete='SET NULL'), nullable=True)  # Подразделение
+    department = relationship("Department", back_populates="department")
 
     users = Column(String,nullable=True)
-
     data = Column(DateTime, nullable=True)
     note = Column(String, nullable=True)
 
