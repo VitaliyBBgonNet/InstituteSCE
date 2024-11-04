@@ -4,6 +4,7 @@ from InformationController import InformationWindowController
 from AddElementController import AddElementController
 from DataSetupController import DataSetupController
 from QrGeneratorController import QrGeneratorController
+
 from app.db import init_db
 import sys
 
