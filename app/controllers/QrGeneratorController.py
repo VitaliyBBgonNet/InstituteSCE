@@ -42,16 +42,21 @@ class QrGeneratorController(QMainWindow):
 
     def searchElements(self):
 
+        name = self.qrInterface.textName.toPlainText()
         type = self.qrInterface.BoxType.currentText()
         status = self.qrInterface.BoxStatus.currentText()
         project = self.qrInterface.BoxProject.currentText()
         departments = self.qrInterface.BoxDepartment.currentText()
+        fio = self.qrInterface.textFIO.toPlainText();
 
         dbSession = SessionLocal()
 
+        #Конструкция адаптивного запроса
         try:
             query = dbSession.query(Detail)
 
+            if name:
+                query = query.filter(Detail.name == name)
             if type:
                 query = query.filter(Detail.type.has(name = type))
 
@@ -64,8 +69,12 @@ class QrGeneratorController(QMainWindow):
             if departments:
                 query = query.filter(Detail.department.has(name = project))
 
+            if fio:
+                query = query.filter(Detail.users == fio)
+
             result = query.all()
 
+            # Печатаем найденные элементы
             for i in result:
                 print(i)
 
